@@ -30,7 +30,7 @@ app.use(limiter);
 // CORS configuration
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://front-affirmations.netlify.app','https://affirmations-amber.vercel.app/','http://localhost:5173','http://localhost:3000'] 
+    ? ['https://front-affirmations.netlify.app','https://affirmations-amber.vercel.app','http://localhost:5173','http://localhost:3000'] 
     : ['http://localhost:3000', 'http://localhost:5173'],
   credentials: true
 }));
