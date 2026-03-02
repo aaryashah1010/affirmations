@@ -97,7 +97,13 @@ export class ProblemController {
         });
 
       } catch (aiError) {
-        console.error('AI generation failed:', aiError);
+        console.error('AI generation failed - Full Error:', {
+          message: aiError.message,
+          code: aiError.code,
+          status: aiError.status,
+          response: aiError.response?.data || aiError.response,
+          stack: aiError.stack
+        });
         
         // Fallback: Generate sample affirmations if AI fails
         const fallbackAffirmations = [

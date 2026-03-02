@@ -1,8 +1,19 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import OpenAI from 'openai';
 import 'dotenv/config';
-console.log("Loaded key:", process.env.GEMINI_API_KEY);
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+import { AIService } from './services/aiService.js';
 
-const result = await model.generateContent("Hello! Write one short affirmation about confidence.");
-console.log(result.response.text());
+const testData = {
+  category: 'anxiety',
+  title: 'Work Stress',
+  description: 'I feel overwhelmed with my current workload and deadlines',
+  severity: 7
+};
+
+console.log('Testing ChatGPT API with problem data...\n');
+try {
+  const response = await AIService.generateAffirmations(testData);
+  console.log('✓ Success! Generated affirmations:');
+  console.log(JSON.stringify(response, null, 2));
+} catch (error) {
+  console.error('✗ Error:', error.message);
+}

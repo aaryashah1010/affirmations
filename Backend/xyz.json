@@ -1,0 +1,564 @@
+[
+  {
+    "headers": {
+      "host": "voice1agent.app.n8n.cloud",
+      "user-agent": "axios/1.11.0",
+      "content-length": "7110",
+      "accept": "application/json, text/plain, /",
+      "accept-encoding": "gzip, br",
+      "cdn-loop": "cloudflare; loops=1; subreqs=1",
+      "cf-connecting-ip": "100.20.5.228",
+      "cf-ew-via": "15",
+      "cf-ipcountry": "US",
+      "cf-ray": "99413665a12670b9-PDX",
+      "cf-visitor": "{\"scheme\":\"https\"}",
+      "cf-worker": "n8n.cloud",
+      "content-type": "application/json",
+      "x-forwarded-for": "100.20.5.228, 104.23.160.221",
+      "x-forwarded-host": "voice1agent.app.n8n.cloud",
+      "x-forwarded-port": "443",
+      "x-forwarded-proto": "https",
+      "x-forwarded-server": "traefik-prod-users-gwc-71-c76b59f55-7pmnb",
+      "x-is-trusted": "yes",
+      "x-real-ip": "100.20.5.228",
+      "x-retell-signature": "v=1761390050156,d=b09556fc94b5fb27e052c1ccec5c1b9c0268ada14dd2f17bbf942c28df612d4d"
+    },
+    "params": {},
+    "query": {},
+    "body": {
+      "event": "call_ended",
+      "call": {
+        "call_id": "call_19fe9f4a7a3d02c7246108446a6",
+        "call_type": "phone_call",
+        "agent_id": "agent_25060360b339b33532dbe6367a",
+        "agent_version": 8,
+        "agent_name": "Pharmcy-agent",
+        "retell_llm_dynamic_variables": {
+          "name": "Aarya Shah",
+          "phone_number": "919426589465",
+          "email": "newtechinfosoft@gmail.com",
+          "lastvisitedon": "12th September",
+          "details": ""
+        },
+        "call_status": "ended",
+        "start_timestamp": 1761390004424,
+        "end_timestamp": 1761390049526,
+        "duration_ms": 45102,
+        "transcript": "Agent: Hi Aarya Shah, this is Anna from Ray Pharmaceuticals. How have you been? Do you have about 5 minutes to chat?\nAgent: Just checking in, Aarya Shah—are you still there? If now isn’t a good time, we can always connect later.\n",
+        "transcript_object": [
+          {
+            "role": "agent",
+            "content": "Hi Aarya Shah, this is Anna from Ray Pharmaceuticals. How have you been? Do you have about 5 minutes to chat?",
+            "words": [
+              {
+                "word": "Hi ",
+                "start": 7.604,
+                "end": 7.789
+              },
+              {
+                "word": "Aarya ",
+                "start": 7.789,
+                "end": 8.08
+              },
+              {
+                "word": "Shah, ",
+                "start": 8.08,
+                "end": 8.289
+              },
+              {
+                "word": "this ",
+                "start": 8.289,
+                "end": 8.451
+              },
+              {
+                "word": "is ",
+                "start": 8.451,
+                "end": 8.591
+              },
+              {
+                "word": "Anna ",
+                "start": 8.591,
+                "end": 8.788
+              },
+              {
+                "word": "from ",
+                "start": 8.788,
+                "end": 8.962
+              },
+              {
+                "word": "Ray ",
+                "start": 8.962,
+                "end": 9.136
+              },
+              {
+                "word": "Pharmaceuticals.",
+                "start": 9.136,
+                "end": 10.262
+              },
+              {
+                "word": " How ",
+                "start": 10.285416748046876,
+                "end": 10.425416748046874
+              },
+              {
+                "word": "have ",
+                "start": 10.425416748046874,
+                "end": 10.552416748046875
+              },
+              {
+                "word": "you ",
+                "start": 10.552416748046875,
+                "end": 10.692416748046876
+              },
+              {
+                "word": "been?",
+                "start": 10.692416748046876,
+                "end": 11.191416748046874
+              },
+              {
+                "word": " Do ",
+                "start": 11.237208251953126,
+                "end": 11.354208251953125
+              },
+              {
+                "word": "you ",
+                "start": 11.354208251953125,
+                "end": 11.458208251953126
+              },
+              {
+                "word": "have ",
+                "start": 11.458208251953126,
+                "end": 11.597208251953125
+              },
+              {
+                "word": "about ",
+                "start": 11.597208251953125,
+                "end": 11.818208251953125
+              },
+              {
+                "word": "5 ",
+                "start": 11.818208251953125,
+                "end": 12.027208251953125
+              },
+              {
+                "word": "minutes ",
+                "start": 12.027208251953125,
+                "end": 12.364208251953125
+              },
+              {
+                "word": "to ",
+                "start": 12.364208251953125,
+                "end": 12.515208251953124
+              },
+              {
+                "word": "chat?",
+                "start": 12.515208251953124,
+                "end": 13.141208251953126
+              }
+            ],
+            "metadata": {
+              "response_id": 0
+            }
+          },
+          {
+            "role": "agent",
+            "content": "Just checking in, Aarya Shah—are you still there? If now isn’t a good time, we can always connect later.",
+            "words": [
+              {
+                "word": "Just ",
+                "start": 24.466,
+                "end": 24.64
+              },
+              {
+                "word": "checking ",
+                "start": 24.64,
+                "end": 24.93
+              },
+              {
+                "word": "in, ",
+                "start": 24.93,
+                "end": 25.046
+              },
+              {
+                "word": "Aarya ",
+                "start": 25.046,
+                "end": 25.372
+              },
+              {
+                "word": "Shah—are ",
+                "start": 25.372,
+                "end": 25.778
+              },
+              {
+                "word": "you ",
+                "start": 25.778,
+                "end": 25.894
+              },
+              {
+                "word": "still ",
+                "start": 25.894,
+                "end": 26.115
+              },
+              {
+                "word": "there?",
+                "start": 26.115,
+                "end": 26.544
+              },
+              {
+                "word": " If ",
+                "start": 26.590125,
+                "end": 26.730125
+              },
+              {
+                "word": "now ",
+                "start": 26.730125,
+                "end": 26.892125
+              },
+              {
+                "word": "isn’t ",
+                "start": 26.892125,
+                "end": 27.078125
+              },
+              {
+                "word": "a ",
+                "start": 27.078125,
+                "end": 27.136125
+              },
+              {
+                "word": "good ",
+                "start": 27.136125,
+                "end": 27.299125
+              },
+              {
+                "word": "time, ",
+                "start": 27.299125,
+                "end": 27.566125
+              },
+              {
+                "word": "we ",
+                "start": 27.566125,
+                "end": 27.670125
+              },
+              {
+                "word": "can ",
+                "start": 27.670125,
+                "end": 27.809125
+              },
+              {
+                "word": "always ",
+                "start": 27.809125,
+                "end": 28.100125
+              },
+              {
+                "word": "connect ",
+                "start": 28.100125,
+                "end": 28.518125
+              },
+              {
+                "word": "later.",
+                "start": 28.518125,
+                "end": 29.191125
+              }
+            ],
+            "metadata": {
+              "response_id": 1
+            }
+          }
+        ],
+        "transcript_with_tool_calls": [
+          {
+            "role": "agent",
+            "content": "Hi Aarya Shah, this is Anna from Ray Pharmaceuticals. How have you been? Do you have about 5 minutes to chat?",
+            "words": [
+              {
+                "word": "Hi ",
+                "start": 7.604,
+                "end": 7.789
+              },
+              {
+                "word": "Aarya ",
+                "start": 7.789,
+                "end": 8.08
+              },
+              {
+                "word": "Shah, ",
+                "start": 8.08,
+                "end": 8.289
+              },
+              {
+                "word": "this ",
+                "start": 8.289,
+                "end": 8.451
+              },
+              {
+                "word": "is ",
+                "start": 8.451,
+                "end": 8.591
+              },
+              {
+                "word": "Anna ",
+                "start": 8.591,
+                "end": 8.788
+              },
+              {
+                "word": "from ",
+                "start": 8.788,
+                "end": 8.962
+              },
+              {
+                "word": "Ray ",
+                "start": 8.962,
+                "end": 9.136
+              },
+              {
+                "word": "Pharmaceuticals.",
+                "start": 9.136,
+                "end": 10.262
+              },
+              {
+                "word": " How ",
+                "start": 10.285416748046876,
+                "end": 10.425416748046874
+              },
+              {
+                "word": "have ",
+                "start": 10.425416748046874,
+                "end": 10.552416748046875
+              },
+              {
+                "word": "you ",
+                "start": 10.552416748046875,
+                "end": 10.692416748046876
+              },
+              {
+                "word": "been?",
+                "start": 10.692416748046876,
+                "end": 11.191416748046874
+              },
+              {
+                "word": " Do ",
+                "start": 11.237208251953126,
+                "end": 11.354208251953125
+              },
+              {
+                "word": "you ",
+                "start": 11.354208251953125,
+                "end": 11.458208251953126
+              },
+              {
+                "word": "have ",
+                "start": 11.458208251953126,
+                "end": 11.597208251953125
+              },
+              {
+                "word": "about ",
+                "start": 11.597208251953125,
+                "end": 11.818208251953125
+              },
+              {
+                "word": "5 ",
+                "start": 11.818208251953125,
+                "end": 12.027208251953125
+              },
+              {
+                "word": "minutes ",
+                "start": 12.027208251953125,
+                "end": 12.364208251953125
+              },
+              {
+                "word": "to ",
+                "start": 12.364208251953125,
+                "end": 12.515208251953124
+              },
+              {
+                "word": "chat?",
+                "start": 12.515208251953124,
+                "end": 13.141208251953126
+              }
+            ],
+            "metadata": {
+              "response_id": 0
+            }
+          },
+          {
+            "role": "agent",
+            "content": "Just checking in, Aarya Shah—are you still there? If now isn’t a good time, we can always connect later.",
+            "words": [
+              {
+                "word": "Just ",
+                "start": 24.466,
+                "end": 24.64
+              },
+              {
+                "word": "checking ",
+                "start": 24.64,
+                "end": 24.93
+              },
+              {
+                "word": "in, ",
+                "start": 24.93,
+                "end": 25.046
+              },
+              {
+                "word": "Aarya ",
+                "start": 25.046,
+                "end": 25.372
+              },
+              {
+                "word": "Shah—are ",
+                "start": 25.372,
+                "end": 25.778
+              },
+              {
+                "word": "you ",
+                "start": 25.778,
+                "end": 25.894
+              },
+              {
+                "word": "still ",
+                "start": 25.894,
+                "end": 26.115
+              },
+              {
+                "word": "there?",
+                "start": 26.115,
+                "end": 26.544
+              },
+              {
+                "word": " If ",
+                "start": 26.590125,
+                "end": 26.730125
+              },
+              {
+                "word": "now ",
+                "start": 26.730125,
+                "end": 26.892125
+              },
+              {
+                "word": "isn’t ",
+                "start": 26.892125,
+                "end": 27.078125
+              },
+              {
+                "word": "a ",
+                "start": 27.078125,
+                "end": 27.136125
+              },
+              {
+                "word": "good ",
+                "start": 27.136125,
+                "end": 27.299125
+              },
+              {
+                "word": "time, ",
+                "start": 27.299125,
+                "end": 27.566125
+              },
+              {
+                "word": "we ",
+                "start": 27.566125,
+                "end": 27.670125
+              },
+              {
+                "word": "can ",
+                "start": 27.670125,
+                "end": 27.809125
+              },
+              {
+                "word": "always ",
+                "start": 27.809125,
+                "end": 28.100125
+              },
+              {
+                "word": "connect ",
+                "start": 28.100125,
+                "end": 28.518125
+              },
+              {
+                "word": "later.",
+                "start": 28.518125,
+                "end": 29.191125
+              }
+            ],
+            "metadata": {
+              "response_id": 1
+            }
+          }
+        ],
+        "recording_url": "https://dxc03zgurdly9.cloudfront.net/1b12aee6ebee72880f4e266933e60ab64c6035cac2eb30901a27e06f00f6c17b/recording.wav",
+        "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/1b12aee6ebee72880f4e266933e60ab64c6035cac2eb30901a27e06f00f6c17b/recording_multichannel.wav",
+        "public_log_url": "https://dxc03zgurdly9.cloudfront.net/1b12aee6ebee72880f4e266933e60ab64c6035cac2eb30901a27e06f00f6c17b/public.log",
+        "disconnection_reason": "user_hangup",
+        "latency": {
+          "llm": {
+            "p50": 1417.5,
+            "p90": 1965.1,
+            "p95": 2033.55,
+            "p99": 2088.31,
+            "min": 733,
+            "max": 2102,
+            "num": 2,
+            "values": [
+              2102,
+              733
+            ]
+          },
+          "tts": {
+            "p50": 372,
+            "p90": 372.8,
+            "p95": 372.9,
+            "p99": 372.98,
+            "min": 371,
+            "max": 373,
+            "num": 2,
+            "values": [
+              373,
+              371
+            ]
+          }
+        },
+        "call_cost": {
+          "product_costs": [
+            {
+              "product": "elevenlabs_tts",
+              "unit_price": 0.1166667,
+              "cost": 5.3666667
+            },
+            {
+              "product": "gpt_4_1",
+              "unit_price": 0.075,
+              "cost": 3.45
+            },
+            {
+              "product": "india_twilio_telephony",
+              "unit_price": 0.25,
+              "cost": 11.5
+            }
+          ],
+          "total_duration_seconds": 46,
+          "total_duration_unit_price": 0.4416667,
+          "combined_cost": 20.3166667
+        },
+        "opt_out_sensitive_data_storage": false,
+        "data_storage_setting": "everything",
+        "opt_in_signed_url": false,
+        "llm_token_usage": {
+          "values": [
+            1076,
+            1108
+          ],
+          "average": 1092,
+          "num_requests": 2
+        },
+        "from_number": "+14058176673",
+        "to_number": "+919426589465",
+        "direction": "outbound",
+        "telephony_identifier": {
+          "twilio_call_sid": "CA174a44c0dd55d68eab16a32b561f07bd"
+        }
+      }
+    },
+    "webhookUrl": "https://voice1agent.app.n8n.cloud/webhook-test/calling",
+    "executionMode": "test"
+  }
+]

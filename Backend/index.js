@@ -9,6 +9,7 @@ import authRoutes from './routes/auth.js';
 import problemRoutes from './routes/problems.js';
 import affirmationRoutes from './routes/affirmations.js';
 import sessionRoutes from './routes/sessions.js';
+import retellRoutes from './routes/retell.js';
 
 // Load environment variables
 dotenv.config();
@@ -31,7 +32,7 @@ app.use(limiter);
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
     ? ['https://front-affirmations.netlify.app','https://affirmations-amber.vercel.app','http://localhost:5173','http://localhost:3000'] 
-    : ['http://localhost:3000', 'http://localhost:5173'],
+    : ['http://localhost:3000', 'http://localhost:5174'],
   credentials: true
 }));
 
@@ -53,6 +54,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/problems', problemRoutes);
 app.use('/api/affirmations', affirmationRoutes);
 app.use('/api/sessions', sessionRoutes);
+app.use('/api/retell', retellRoutes);
 
 // 404 handler
 app.use('*', (req, res) => {

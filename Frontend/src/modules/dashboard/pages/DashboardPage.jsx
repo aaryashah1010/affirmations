@@ -1,10 +1,12 @@
 import { useState } from 'react';
-import { Brain, Heart, DollarSign, Target, Sparkles } from 'lucide-react';
+import { Brain, Heart, DollarSign, Target, Sparkles, Mic } from 'lucide-react';
 import { userAPI } from '../../../api/index.js';
 import Button from '../../../shared/components/Button.jsx';
+import VoiceChatModal from '../components/VoiceChatModal.jsx';
 
 const DashboardPage = () => {
   const [showProblemForm, setShowProblemForm] = useState(false);
+  const [showVoiceChat, setShowVoiceChat] = useState(false);
   const [problemData, setProblemData] = useState({
     category: '',
     description: '',
@@ -194,13 +196,23 @@ const DashboardPage = () => {
           Share your challenge and receive personalized affirmations and solutions powered by AI
         </p>
         
-        <Button 
-          size="lg" 
+        <Button
+          size="lg"
           onClick={() => setShowProblemForm(true)}
           className="text-lg px-8 py-4"
         >
           <Brain className="w-6 h-6 mr-3" />
           Tell Your Problem Now
+        </Button>
+
+        <Button
+          size="lg"
+          variant="outline"
+          onClick={() => setShowVoiceChat(true)}
+          className="text-lg px-8 py-4"
+        >
+          <Mic className="w-6 h-6 mr-3" />
+          Talk with AI
         </Button>
       </div>
 
@@ -313,6 +325,12 @@ const DashboardPage = () => {
           </div>
         </div>
       )}
+
+      {/* Voice Chat Modal */}
+      <VoiceChatModal
+        isOpen={showVoiceChat}
+        onClose={() => setShowVoiceChat(false)}
+      />
     </div>
   );
 };

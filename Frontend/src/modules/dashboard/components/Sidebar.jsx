@@ -1,18 +1,19 @@
 import { NavLink, useNavigate } from 'react-router-dom';
-import { 
-  Home, 
-  Plus, 
-  Heart, 
-  BarChart3, 
-  Settings, 
+import {
+  Home,
+  Plus,
+  Heart,
+  BarChart3,
+  Settings,
   LogOut,
   Brain,
-  Target
+  Target,
+  Mic
 } from 'lucide-react';
 import { useAuth } from '../../../shared/hooks/useAuth.js';
 import { cn } from '../../../shared/utils/cn.js';
 
-const Sidebar = ({ isOpen, onClose }) => {
+const Sidebar = ({ isOpen, onClose, onVoiceChatClick }) => {
   const { signOut, user } = useAuth();
   const navigate = useNavigate();
 
@@ -62,8 +63,8 @@ const Sidebar = ({ isOpen, onClose }) => {
                 to={item.path}
                 className={({ isActive }) => cn(
                   'flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors',
-                  isActive 
-                    ? 'bg-primary-50 text-primary-700 border-r-2 border-primary-500' 
+                  isActive
+                    ? 'bg-primary-50 text-primary-700 border-r-2 border-primary-500'
                     : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                 )}
                 onClick={onClose}
@@ -72,6 +73,20 @@ const Sidebar = ({ isOpen, onClose }) => {
                 <span className="font-medium">{item.label}</span>
               </NavLink>
             ))}
+
+            {/* Talk with AI Button */}
+            <button
+              onClick={() => {
+                if (onVoiceChatClick) {
+                  onVoiceChatClick();
+                }
+                onClose();
+              }}
+              className="flex items-center space-x-3 w-full px-4 py-3 rounded-lg transition-colors text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+            >
+              <Mic className="w-5 h-5" />
+              <span className="font-medium">Talk with AI</span>
+            </button>
           </nav>
 
           {/* User section */}
