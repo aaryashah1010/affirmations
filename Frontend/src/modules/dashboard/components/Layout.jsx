@@ -1,15 +1,24 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import Sidebar from './Sidebar.jsx';
+import VoiceChatModal from './VoiceChatModal.jsx';
 import { cn } from '../../../shared/utils/cn.js';
 
 const Layout = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [voiceChatOpen, setVoiceChatOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Mobile sidebar */}
-      <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+      <Sidebar
+        isOpen={sidebarOpen}
+        onClose={() => setSidebarOpen(false)}
+        onVoiceChatClick={() => {
+          setVoiceChatOpen(true);
+          setSidebarOpen(false);
+        }}
+      />
       
       {/* Main content */}
       <div className="lg:pl-64">
@@ -35,6 +44,12 @@ const Layout = ({ children }) => {
           {children}
         </main>
       </div>
+
+      {/* Voice Chat Modal */}
+      <VoiceChatModal
+        isOpen={voiceChatOpen}
+        onClose={() => setVoiceChatOpen(false)}
+      />
     </div>
   );
 };
